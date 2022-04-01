@@ -1,0 +1,8 @@
+<div [ngClass]="baseClass">
+  <h1 [ngClass]="baseClass + '__title'">ERROR</h1>
+  <h2 [ngClass]="baseClass + '__subtitle'">Oops, algo ha salido mal</h2>
+
+  <a [ngClass]="baseClass + '__link'" [title]="'home'" [routerLink]="['']">
+    Volver a la página principal
+  </a>
+</div>
