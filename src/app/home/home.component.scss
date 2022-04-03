@@ -1,6 +1,6 @@
 @import "/src/assets/scss/theme.scss";
 
-.provinces {
+.home {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,10 +31,7 @@
   &__content {
     @include article-content;
 
-    &__list {
-      height: auto;
-      overflow: scroll;
-    }
+
 
     @include mqMax768-content;
   }

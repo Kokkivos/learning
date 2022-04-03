@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./provinces/provinces.module').then((m) => m.ProvincesModule),
+      import('./home/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'error',

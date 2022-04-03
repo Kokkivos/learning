@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "201fdd3b-21ec-448b-b3b6-ae5015c86d02"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "weather-app": {
+    "learning": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/weather-app",
+            "outputPath": "dist/learning",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "weather-app:build:production"
+              "browserTarget": "learning:build:production"
             },
             "development": {
-              "browserTarget": "weather-app:build:development"
+              "browserTarget": "learning:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "weather-app:build"
+            "browserTarget": "learning:build"
           }
         },
         "test": {
@@ -97,5 +100,5 @@
       }
     }
   },
-  "defaultProject": "weather-app"
+  "defaultProject": "learning"
 }
